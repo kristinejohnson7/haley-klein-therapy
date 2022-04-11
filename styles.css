@@ -209,6 +209,14 @@
   align-items: flex-start;
 }
 
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
 
 /* About Me Section */
 
@@ -270,10 +278,12 @@
   background-color: rgba(251, 250, 248, 0.50);
   padding: var(--size-40);
   border-radius: var(--size-12);
-}
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
 
 .form-container h4 {
-  font-size: var(--size-20);
+  font-size: var(--size-30);
+  font-style: italic;
+  color: #a4a896;
   margin-bottom: var(--size-12);
 }
 
@@ -284,6 +294,58 @@
   border: 6px solid rgba(190, 194, 175, 0.30);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.input-container label {
+  font-size: var(--size-20);
+}
+
+.input-container {
+  margin-bottom: var(--size-18);
+}
+
+.input {
+  padding: var(--size-10);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--light-background);
+  margin-top: var(--size-10);
+}
+
+.form-container textarea {
+  font-family: 'Dosis', sans-serif;
+}
+
+input:focus {
+  outline: 2px solid var(--accent-green);  
+ }
+ input.visited {
+  outline: 2px solid var(--accent-green);  
+ }
+
+ textarea:focus {
+  outline: 2px solid var(--accent-green);  
+ }
+
+ textarea.visited {
+  outline: 2px solid var(--accent-green);  
+ }
+
+ .submit-btn {
+   width: 100%;
+ }
+
+ .submit-btn input {
+   border: none;
+   width: 100%;
+   font-size: var(--size-20);
+   background-color: var(--accent-green);
+   color: var(--light-background);
+ }
+
+ .submit-btn input:hover {
+   background-color: var(--dark-background-mauve);
+ }
 
 /* Footer */
 
