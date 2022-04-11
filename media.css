@@ -1,0 +1,152 @@
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+
+@media screen and (max-width: 950px) {
+  .flower-sticker {
+    right: -50px;
+  }
+
+  .hero-back-image {
+    left: 80px;
+  }
+
+  .card-table {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-container {
+    flex-wrap: wrap;
+    gap: var(--size-50);
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-flex {
+    flex-wrap: wrap;
+    gap: var(--size-50);
+    justify-content: center;
+    padding-bottom: var(--size-30);
+    background-color: var(--accent-green);
+  }
+
+}
+
+@media screen and (max-width: 675px) {
+
+  .flower-sticker {
+    right: -20px;
+    bottom: -90px;
+  }
+
+  .card-table {
+    width: 30rem;
+  }
+
+  .about-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .hero-wrapper .hero-back-image {
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    width: 40%;
+    border-radius: 20px;
+    margin: var(--size-16);
+    padding: var(--size-16);
+    z-index: 150;
+    text-align: right;
+    box-shadow: 0px 0px var(--size-20) rgba(52, 49, 75, 0.1);
+    background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.70));
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+
+  .hero-wrapper {
+    margin-top: var(--size-150);
+    flex-wrap: wrap;
+  }
+
+  .mobile-logo {
+    left: 0px;
+    top: -150px;
+  }
+
+  .hero-wrapper .hero-back-image {
+    left: 0px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .footer-container iframe {
+    width: 20rem;
+}
+
+.nav-position {
+  margin-right: var(--size-40);
+  margin-top: var(--size-14);
+}
+
+.logo-hidden {
+  display: none;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.card-table {
+  width: 20rem;
+}
+
+.card {
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .mobile-logo img {
+    width: 20rem;
+  }
+
+  .hero-wrapper .hero-back-image {
+    top: 0px;
+  }
+
+  .card-table {
+    width: 18rem;
+  }
+
+  .contact-image img {
+    width: 15rem;
+    height: 20rem;
+  }
+}
