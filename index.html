@@ -158,26 +158,29 @@
     <div id="contact"></div>
     <div class="mauve-background">
       <section class="contact-container container ">
-      <form class="form-container" action="">
+      <form class="form-container"
+      action="https://getform.io/f/b499fd39-ecc2-4b53-a166-b8fd9f8ccec2"
+      method="POST"
+      target="_blank">
         <h4>Request an Appointment</h4>
         <div class="input-container">
           <label for="name"> Name <span>*</span> </label> <br />
-          <input class="input" type="text" required />
+          <input class="input" type="text" name="name" required />
         </div>
         <div class="input-container">
           <label for="name"> Email <span>*</span> </label><br />
-          <input class="input" type="text" required />
+          <input class="input" type="text" name="email" required />
         </div>
         <div class="input-container">
           <label for="name"> Phone Number <span>*</span> </label><br />
-          <input class="input" type="text" required />
+          <input class="input" type="text" name="phone" required />
         </div>
         <div class="input-container">
           <label for="">How can I help?</label>
-          <textarea class="input" name="" id="" cols="30" rows="10"> </textarea>
+          <textarea class="input" name="submission-text" id="help-container" cols="30" rows="10"> </textarea>
         </div>
         <div class="submit-btn">
-          <input class="btn" type="submit">
+          <input class="btn" type="submit" name="submit-btn">
         </div>
       </form>
       <div class="contact-image reveal">
