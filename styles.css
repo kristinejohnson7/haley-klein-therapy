@@ -220,6 +220,12 @@
   padding-bottom: 11.75rem;
 }
 
+.card-wrapper .services-text-main {
+  font-size: var(--size-20);
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
 .services-text {
   width: 87%;
 }
@@ -269,6 +275,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--size-40);
   background-color: rgba(251, 250, 248, 60%);
   border-radius: 5%;
