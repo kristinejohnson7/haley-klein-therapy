@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dosis:wght@200;300;400;500;600;700;800&family=Fredoka:wght@300&family=Hind:wght@300;400;500;600;700&family=Hubballi&family=Lato&family=League+Spartan:wght@300&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Palette+Mosaic&family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldd79cgAAAAAP44UdzxGMBO2oVJsp0BCLEcdxBr"></script>
     <script src="https://kit.fontawesome.com/01dfe11cf5.js" crossorigin="anonymous"></script>
 
   </head>
@@ -160,6 +161,7 @@
       action="https://getform.io/f/04a0fa4c-80d7-4022-9f98-1a0ee458476d"
       method="POST"
       target="_blank">
+      <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
         <h4>Request an Appointment</h4>
         <div class="input-container">
           <label for="name"> Name <span>*</span> </label> <br />
@@ -264,5 +266,13 @@
     
 
     <script src="index.js"></script>
+    <script>
+      grecaptcha.ready(function() {
+          grecaptcha.execute('6Ldd79cgAAAAAP44UdzxGMBO2oVJsp0BCLEcdxBr', {action: 'homepage'})
+          .then(function(token) {
+            document.getElementById('captchaResponse').value = token;
+          });
+        });
+   </script>
   </body>
 </html>
