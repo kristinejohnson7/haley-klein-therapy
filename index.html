@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dosis:wght@200;300;400;500;600;700;800&family=Fredoka:wght@300&family=Hind:wght@300;400;500;600;700&family=Hubballi&family=Lato&family=League+Spartan:wght@300&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Palette+Mosaic&family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ldd79cgAAAAAP44UdzxGMBO2oVJsp0BCLEcdxBr"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcza3QhAAAAALhzprU8ozgzaFd8fOcrEF3NGKN9"></script>
+
     <script src="https://kit.fontawesome.com/01dfe11cf5.js" crossorigin="anonymous"></script>
 
   </head>
@@ -158,11 +159,11 @@
     <div class="mauve-background">
       <section class="contact-container container ">
       <form class="form-container"
-      action="https://getform.io/f/a6baed1a-c2ad-4a47-a31b-dca06400bfe6"
+      action="https://getform.io/f/3136f644-e7a6-4b27-b8f6-543f1e183086"
       method="POST"
       target="_blank">
       <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        <h4>Request an Appointment</h4>
+        <!-- <h4>Request an Appointment</h4> -->
         <div class="input-container">
           <label for="name"> Name <span>*</span> </label> <br />
           <input class="input" type="text" name="name" required />
@@ -179,16 +180,16 @@
           <label for="">How can I help?</label>
           <textarea class="input" name="submission-text" id="help-container" cols="30" rows="10"> </textarea>
         </div>
-        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        <div class="submit-btn">
+        <!-- <div class="submit-btn"> -->
           <input class="btn" type="submit" name="submit-btn">
-        </div>
+        <!-- </div> -->
       </form>
       <div class="contact-image reveal">
         <img src="./assets/chair-and-plant.jpg" alt="" />
       </div>
     </section>
     </div>
+    
     <div id="myModal" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
@@ -268,11 +269,11 @@
     <script src="index.js"></script>
     <script>
       grecaptcha.ready(function() {
-          grecaptcha.execute('6Ldd79cgAAAAAP44UdzxGMBO2oVJsp0BCLEcdxBr', {action: 'homepage'})
-          .then(function(token) {
-            document.getElementById('captchaResponse').value = token;
-          });
-        });
-   </script>
+    grecaptcha.execute('6Lcza3QhAAAAALhzprU8ozgzaFd8fOcrEF3NGKN9', {action: 'contact'})
+    .then(function(token) {
+      document.getElementById('captchaResponse').value = token;
+    });
+  });
+ </script>
   </body>
 </html>
