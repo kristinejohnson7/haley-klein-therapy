@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Haley Klein Therapy</title>
-    <meta name="description" content="" />
+    <meta name="description" content="EMDR therapy" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="default.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -158,36 +158,26 @@
     <div id="contact"></div>
     <div class="mauve-background">
       <section class="contact-container container ">
-        <div class="formWrapper">
-          <h4>Request an Appointment</h4>
-
-
-      <form class="form-container"
-      action="https://getform.io/f/3136f644-e7a6-4b27-b8f6-543f1e183086"
-      method="POST"
-      target="_blank">
-      <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-        <div class="input-container">
-          <label for="name"> Name <span>*</span> </label> <br />
-          <input class="input" type="text" name="name" required />
-        </div>
-        <div class="input-container">
-          <label for="name"> Email <span>*</span> </label><br />
-          <input class="input" type="text" name="email" required />
-        </div>
-        <div class="input-container">
-          <label for="name"> Phone Number <span>*</span> </label><br />
-          <input class="input" type="text" name="phone" required />
-        </div>
-        <div class="input-container">
-          <label for="">How can I help?</label>
-          <textarea class="input" name="submission-text" id="help-container" cols="30" rows="10"> </textarea>
-        </div>
-        <div class="submit-btn">
-          <input class="btn" type="submit" name="submit-btn">
-        </div>
-      </form>
-    </div>
+          <div class="formWrapper">
+            <h4>Getting Started</h4>
+            <p>Starting therapy can be an intimidating experience, but it's also a brave step towards healing and growth. Here's what you can expect:
+              <ol>
+                <li>
+                  <strong>Initial Contact</strong>
+                </li>
+                <li>
+                  <strong>Phone Consultation:</strong> We may connect via phone so I can get a sense of what you're looking for in therapy and answer any initial questions you may have. 
+                </li>
+                <li>
+                  <strong>Scheduling an Appointment:</strong> If you feel comfortable moving forward, you'll schedule your first appointment. I will provide information about my availability, fees, and what to expect in your first session.
+                </li>
+                <li>
+                  <strong>First Session:</strong> The first session is typically an intake session where I gather more detailed information about your concerns, background, and goals for therapy. You'll also discuss logistics like scheduling, fees, and confidentiality. This is a good time to ask any questions you may have about the therapeutic process.
+                </li>
+              </ol>
+            </p>
+            <a class="btn" target="_blank" href="mailto:haleykleintherapy@gmail.com">Email me</a>
+          </div>
 
       <div class="contact-image reveal">
         <img src="./assets/chair-and-plant.jpg" alt="" />
@@ -261,13 +251,5 @@
     
 
     <script src="index.js"></script>
-    <script>
-      grecaptcha.ready(function() {
-    grecaptcha.execute('6Lcza3QhAAAAALhzprU8ozgzaFd8fOcrEF3NGKN9', {action: 'contact'})
-    .then(function(token) {
-      document.getElementById('captchaResponse').value = token;
-    });
-  });
- </script>
   </body>
 </html>
